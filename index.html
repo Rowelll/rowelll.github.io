@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzień Julci</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            margin: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: repeat(5, minmax(230px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            visibility: hidden;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 60px;
+            border-radius: 30px;
+        }
+        .card:first-child {
+            visibility: visible;
+        }
+        .card:nth-child(odd) {
+            background-color: lightcoral;
+            border: 20px solid lightcoral;
+        }
+        .card:nth-child(even) {
+            background-color: lightgreen;
+            border: 20px solid lightgreen;
+        }
+        div.text {
+            text-align: center;
+            justify-self: center;
+            font-size: 16px;
+        }
+        button {
+            min-width: 50px;
+            max-width: 100px;
+            min-height: 30px;
+            max-height: 60px;
+            align-self: flex-end;
+            justify-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 20px;">Wszystkiego najlepszego z okazji dnia kobiet, Julcia! Oto część mojego prezentu, (drobny) pokaz umiejętności w przestrzeni, która może i nie interesuje mnie tak dogłębnie w dzisiejszych czasach, ale pozostaje taką, w której niosę trochę umiejętności. Kocham Cię!</p>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="text">
+                Klikając w guzik, pojawią się przed Tobą kolejne karteczki, wypełnione ciekawostkami, informacjami, opiniami, zapewnieniami i wróżbami na przyszłość!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Bardzo Cię kocham! Wiedziałaś o tym?
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Nigdy nie znudzę się wstawaniem o wczesnych godzinach specjalnie dla Ciebie. Słyszenie Twojego zaspanego głosu jest niczym dar niebiański!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Podobnie, nigdy nie znudzę się zasypianiem o Twoich godzinach. Jaki jest sens siedzieć po nocy, jeżeli nie robię tego z Tobą? To strata czasu...
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Zamiłowanie do k-popu, gust do ubioru (koszul szczególnie!), zainteresowanie psychologią i dbanie o własną urodę to Twoja zasługa!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Niezmiernie zależy mi na udowodnieniu, że miłość jest warta życia. Mam nadzieję, że będzie dane nam spędzić każdy dzień wspólnie aż do śmierci &lt3
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Odsłonięcie mojej maski przed Tobą sprawiło, że każdą emocję odczuwam intensywniej, niż zwykle. Czuję się zadowolony, że odkryłem dzięki temu siebie i pracuję, aby działało to wyłącznie na moją korzyść!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Zawsze tu dla Ciebie będę. Może to być teraz lub za dekadę, w pracy domowej lub walce z depresją - dla Ciebie będę tutaj zawsze ^^
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Nigdy nie zapomnę uśmiechu, który przyniósł nam nasz pierwszy pocałunek. Wypełnia mnie szczęściem za każdym razem...
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Robię się łatwo zazdrosny :(
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Moja miłość nie zna granic. Możesz się na mnie wściekać, mogę się na Ciebie wściekać, będę cię zawsze kochał i zawsze włączę Cię w swoje ramiona!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Bez Ciebie robię się strasznie samotny i stęskniony. Ciężko mi się na czymkolwiek długoterminowo skupić...
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Nie poznałem w życiu osoby, z którą spędzało mi się czas tak przyjemnie, jak z Tobą!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Od września regularnie zapisuję, co lubisz, co masz tendencję robić i z czego odnosisz przyjemność, abym mógł pracować z tym lepiej :3
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Nauczyłaś mnie być delikatnym!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Przykro mi, że nadal musisz zmagać się z cierpieniem i pustką. Staram się, abyś mogła czuć przy mnie tego jak najmniej!!!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Mam nadzieję, że w zdrowy i prawidłowy sposób oddaję Tobie przestrzeń na rozwój. Zasługujesz na nią, skarbie &lt33333
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Wyglądasz przepięknie, a najbardziej lubię Cię w wygodnych (np. nocnych) ubraniach. Są takie sexy :333
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Czasami tęsknota potrafi odnieść wpływ na calutki mój dzień...
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Uwielbiam spędzić chwile na słuchaniu z Tobą muzyki i oglądaniu filmików, choć nie są bezpośrednio w przestrzeni moich zainteresowań :D
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Moment, w którym wprowadzimy się do jednego mieszkania, ucementuje mnie jako najszczęśliwszego mężczyznę świata...
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Każdego dnia marzę o możliwości naszego spotkania się w cztery oczy i spędzenia czasu wspólnie. Czekanie jest tego warte!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Lubię słuchać o każdym aspekcie twojego życia i nie mogę się doczekać każdej chwili, w której dzielisz się nawet najmniejszymi szczegółami :3
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Jesteśmy związani na amen. Chcę, aby każda chwila naszych żyć była tego warta. W młodości i starości, w lepszych i gorszych chwilach. My przeciwko całemu światu...
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+        <div class="card">
+            <div class="text">
+                Kocham cię!
+            </div>
+            <button onclick="Pass()">>></button>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    let card = document.querySelectorAll(".card");
+    let guzik = document.querySelectorAll("button");
+    let wartosc = 0;
+    let niewidocznosc = 0;
+    function Pass() {
+            guzik[wartosc].style.visibility = "hidden";
+            wartosc++;
+            card[wartosc].style.visibility = "visible";
+            card[wartosc].style.opacity = "0";
+            card[wartosc].style.backgroundColor = `hsl(${Math.floor(Math.random()*361)},100%,89%)`;
+            card[wartosc].style.borderColor = card[wartosc].style.backgroundColor;
+            
+        let przemiana = setInterval(function() {
+            if(niewidocznosc < 1) {
+                niewidocznosc += 0.05;
+                card[wartosc].style.opacity = `${niewidocznosc}`;
+            }
+            else {
+                niewidocznosc = 0;
+                clearInterval(przemiana);
+            }
+        }, 10);
+        przemiana(card[wartosc]);
+    
+    }
+</script>
+
+</html>
